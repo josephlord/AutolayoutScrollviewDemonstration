@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oz-Y6-fss">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oz-Y6-fss">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -22,6 +22,7 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="441" id="knV-oK-4LH"/>
+                                            <constraint firstAttribute="width" constant="250" id="rLM-2m-p62"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -29,20 +30,27 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="0Jq-DH-kcf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="568" id="74Z-E9-OoU"/>
                                     <constraint firstAttribute="bottom" secondItem="b7C-RE-3sE" secondAttribute="bottom" constant="30" id="8SQ-ya-2N6"/>
                                     <constraint firstAttribute="trailing" secondItem="b7C-RE-3sE" secondAttribute="trailing" constant="35" id="AyK-P0-Nau"/>
                                     <constraint firstAttribute="centerX" secondItem="b7C-RE-3sE" secondAttribute="centerX" id="b0b-bR-Sqn"/>
                                     <constraint firstItem="b7C-RE-3sE" firstAttribute="top" secondItem="8Oz-Y6-fss" secondAttribute="top" constant="20" id="i8o-Zh-dpE"/>
+                                    <constraint firstAttribute="height" constant="568" id="kD3-qn-WB9"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Oz-Y6-fss" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="DWu-M4-Ys1"/>
+                            <constraint firstItem="8Oz-Y6-fss" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vwv-j8-fmL"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="-299"/>
+            <point key="canvasLocation" x="-213" y="-289"/>
         </scene>
     </scenes>
     <classes>
